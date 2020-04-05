@@ -44,6 +44,7 @@
             <li><a href="portfolio.html">Configurator</a></li>
             <li><a href="blog.html">Shop</a></li>
             <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="#exampleModalCenter"  data-toggle="modal" >Log in / Register in </a></li>
           </ul>
         </div>
       </div>
@@ -148,7 +149,7 @@
         <h2>You want to book an appointment</h2>
         <p class="lead">Upgrade your car and you will get free dyno test. Book an appointment you want by contacting us through message.</p>
         <div class="request">
-          <h4><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact us</a></h4>
+          <h4><a href="contact-us.html">Contact us</a></h4>
         </div>
       </div>
       <!--/.get-started-->
@@ -295,9 +296,9 @@
           <div class="widget">
             <h3>Company</h3>
             <ul>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/about-us.html">About us</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact</a></li>
-              <li><a href="#">Copyright</a></li>
+              <li><a href="about-us.html">About us</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="">Copyright</a></li>
             </ul>
           </div>
         </div>
@@ -309,7 +310,7 @@
             <ul>
               <li><a href="#">Faq</a></li>
               <li><a href="#">Forum</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -331,7 +332,7 @@
               <li><a>Location: Džemala Bijedića 1</a></li>
               <li><a>Email: DreamCar@gmail.com</a></li>
               <li><a>Phone: 062 112 233</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Message us</a></li>
+              <li><a href="contact-us.html">Message us</a></li>
             </ul>
           </div>
         </div>
@@ -368,15 +369,15 @@
           &copy; DC Theme. All Rights Reserved.
           <div class="credits">
             
-            Designed by <a href="file:///C:/Users/User/Desktop/Gp/index.html">DreamCar</a>
+            Designed by <a href="index.html">DreamCar</a>
           </div>
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-            <li><a href="file:///C:/Users/User/Desktop/Gp/index.html">Home</a></li>
-            <li><a href="file:///C:/Users/User/Desktop/Gp/about-us.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="#">Faq</a></li>
-            <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -391,6 +392,222 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
+
+
+  <!--- .log in --->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <form id="login">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalCenterTitle">Prijava</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email:</label>
+        <input type="email" class="form-control" name="full_email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+        <label for="exampleInputPassword1">Šifra:</label>
+        <input type="password" class="form-control" name="sifratreba" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Zapamti šifru</label>
+        <br><br>
+        <a  href="#register" data-toggle="modal">Još uvijek se niste registrovali?</a>
+        </div>
+      </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+    <button type="submit" class="btn btn-primary">Prijava</button>
+    </div>
+    </form>
+  </div>
+  </div>
+  </div>
+    <!--- end of log in --->
+
+      <!--- register --->
+
+
+ <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <form id="registerid">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registerTitle">Registracija</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  
+        <div class="form-group">
+        <label >Ime:</label>
+        <input  type="text" name="ime" class="form-control">
+        </div>
+        <div class="form-group">
+        <label >Prezime:</label>
+        <input type="text" name="prezime" class="form-control">
+        </div>
+        <div class="form-group">
+        <label>Email:</label>
+        <input type="email" name="reg1" class="form-control">
+        </div>
+        <div class="form-group">
+        <label>Šifra:</label>
+        <input  type="text"  name="regpw" class="form-control">
+        </div>
+        <div class="form-group">
+        <label>Telefon:</label>
+        <input  type="text" name="agr1" class="form-control">
+        <small class="form-text text-muted">Vaš broj telefona nikome nećemo dijeliti.</small>
+        </div>
+        <label class="form-check-label" for="exampleCheck1">Slažem se sa uslovima korištenja.</label>
+        <input type="checkbox" class="checkbox1" name="checkboxgg">
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+        <button type="submit" class="btn btn-primary">Završi</button>
+      </div>
+      </form>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+<!-- login codeeeeee-->
+
+
+
+    <script>
+
+
+    function open_modal(){
+      console.log('test 123');
+      $('exampleModalCenter').modal('toggle');
+    }
+
+
+              $(function() {
+                 $("#login").validate({
+                  rules: {
+                        full_email: "required",
+                        sifratreba: "required",
+                         email: {
+                         required: true,
+                         email: true
+                        },
+             sifraa: {
+                         required: true,
+                         minlength: 5
+                      },
+                       agree: "required"
+                 },
+
+
+              messages: {
+                       firstname: "This field is required.",
+                       lastname: "This field is required.",
+              sifraa: {
+                      required: "Please provide a password",
+                      minlength: "Vasa sifra mora biti duza od 5 slova"
+                        },
+                      email: "Molim vas unesite validan email",
+                     agree: "Please accept our policy"
+                       },
+
+                submitHandler: function(form) {
+                  form.submit();
+              }
+           });
+
+    });
+
+
+  
+
+
+
+  
+  </script>
+
+
+
+<!-- register -->
+
+
+<script>
+  $(function() {
+     $("#registerid").validate({
+    rules: {
+        ime: {
+        required: true,
+        minlength: 3
+        },
+        prezime: {
+        required: true,
+        minlength: 5
+        },
+        reg1: {
+        required: true,
+        email: true
+        },
+        regpw: {
+        required: true,
+        minlength: 8
+        },
+        checkboxgg: {
+                  required: true
+                }
+     },
+  messages: {
+       ime: {
+         required: "Molimo vas unesite vaše ime",
+         email: "Vaš mora sadržati najmanje 3 slova."
+       },
+       prezime: {
+         required: "Molimo vas unesite vaše prezime",
+         minlength: "Vaše prezime mora sadržati najmanje 5 slova."
+       },
+       reg1: {
+         required: "Vaš Email je obavezan za registraciju.",
+         email: "Vaš Email je neispravan"
+       },
+       regpw: {
+         required: "Molimo vas unesite šifru.",
+         minlength: "Vaša šifra mora sadržati minimalno 8 slova"
+       },
+       agr1: {
+         aggre: "Niste prihvatili uslove koristenja!"
+       },
+       checkboxgg: {
+                 required: "Niste prihvatili uslove koristenja!"
+               }
+  },
+
+    submitHandler: function(form) {
+    form.submit();
+  }
+ });
+});
+
+
+</script>
+
+
+
+
 
 </body>
 

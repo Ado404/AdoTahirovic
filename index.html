@@ -44,14 +44,16 @@
             <li><a href="services.html">Dyno test</a></li>
             <li><a href="portfolio.html">Configurator</a></li>
             <li><a href="blog.html">Shop</a></li>
-            <li><a href="blog.html">Contact</a></li>        
+            <li><a href="contact-us.html">Contact</a></li>     
+            <li><a href="#exModalCenter"  data-toggle="modal" >Log in / Register in </a></li>
+   
           </ul>
         </div>
       </div>
       <!--/.container-->
     </nav>
     <!--/nav-->
-
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   </header>
   <!--/header-->
 
@@ -421,16 +423,16 @@
   </section>
   <!--/#middle-->
 
- <section id="bottom">
+  <section id="bottom">
     <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="widget">
             <h3>Company</h3>
             <ul>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/about-us.html">About us</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact</a></li>
-              <li><a href="#">Copyright</a></li>
+              <li><a href="about-us.html">About us</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+              <li><a href="">Copyright</a></li>
             </ul>
           </div>
         </div>
@@ -442,25 +444,10 @@
             <ul>
               <li><a href="#">Faq</a></li>
               <li><a href="#">Forum</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
             </ul>
           </div>
         </div>
-        <!--/.col-md-3-->
-<!--
-        <div class="col-md-3 col-sm-6">
-          <div class="widget">
-            <h3>Developers</h3>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">SEO Marketing</a></li>
-              <li><a href="#">Theme</a></li>
-              <li><a href="#">Development</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--/.col-md-3-->
-
         <div class="col-md-3 col-sm-6">
           <div class="widget">
             <h3>Our Partners</h3>
@@ -479,7 +466,7 @@
               <li><a>Location: Džemala Bijedića 1</a></li>
               <li><a>Email: DreamCar@gmail.com</a></li>
               <li><a>Phone: 062 112 233</a></li>
-              <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Message us</a></li>
+              <li><a href="contact-us.html">Message us</a></li>
             </ul>
           </div>
         </div>
@@ -516,21 +503,215 @@
           &copy; DC Theme. All Rights Reserved.
           <div class="credits">
             
-            Designed by <a href="file:///C:/Users/User/Desktop/Gp/index.html">DreamCar</a>
+            Designed by <a href="index.html">DreamCar</a>
           </div>
         </div>
         <div class="col-sm-6">
           <ul class="pull-right">
-            <li><a href="file:///C:/Users/User/Desktop/Gp/index.html">Home</a></li>
-            <li><a href="file:///C:/Users/User/Desktop/Gp/about-us.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
             <li><a href="#">Faq</a></li>
-            <li><a href="file:///C:/Users/User/Desktop/Gp/contact-us.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
   <!--/#footer-->
+
+
+
+<!--- .log in --->
+  <div class="modal fade" id="exModalCenter" tabindex="-1" role="dialog" aria-labelledby="exModalCenter" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+   <div class="modal-content">
+     <form id="Log_in">
+     <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 17.5px; margin-left: -37.5px;">Prijava</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 38px; margin-top: -34px;">
+       <span aria-hidden="true">&times;</span>
+     </button>
+     </div>
+     <div class="modal-body">
+       <div class="form-group">
+         <label for="exInputEmail">Email:</label>
+         <input type="email" class="form-control" name="LogInEmail"  id="exInputEmail" aria-describedby="emailHelp">
+         </div>
+         <div class="form-group">
+         <label for="exInputPassword">Šifra:</label>
+         <input type="password" class="form-control" name="logpass" id="exInputPassword">
+         </div>
+         <div class="form-group form-check">
+         <input type="checkbox" class="form-check-input">
+         <label class="form-check-label" for="exampleCheck1">Zapamti šifru</label>
+         <br><br>
+         <a href="#registerr" data-toggle="modal">Još uvijek se niste registrovali?</a>
+         </div>
+       </div>
+     <div class="modal-footer">
+     <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-bottom: -10px;">Zatvori</button>
+     <button type="submit" class="btn btn-primary">Prijava</button>
+     </div>
+     </form>
+   </div>
+   </div>
+   </div>
+     <!--- end of log in --->
+
+       <!--- register --->
+
+     <div class="modal fade" id="registerr" tabindex="-1" role="dialog" aria-labelledby="regTitle" aria-hidden="true" >
+     <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+       <form id="Register1">
+       <div class="modal-header">
+         <h5 class="modal-title" id="RegisterNaslov" style="font-size: 17.5px; margin-left: -37.5px;">Registracija</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 38px; margin-top: -34px;">
+         <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+
+         <div class="form-group">
+         <label >Ime:</label>
+         <input type="text" name="ime1" class="form-control">
+         </div>
+         <div class="form-group">
+         <label >Prezime:</label>
+         <input type="text" name="prezime1" class="form-control">
+         </div>
+         <div class="form-group">
+         <label>Email:</label>
+         <input type="email" name="regemail" class="form-control">
+         </div>
+         <div class="form-group">
+         <label>Šifra:</label>
+         <input type="text"  name="regpass" class="form-control">
+         </div>
+         <div class="form-group">
+         <label>Telefon:</label>
+         <input type="text" name="regtel" class="form-control">
+         <small class="form-text text-muted">Vaš broj telefona nikome nećemo dijeliti.</small>
+         </div>
+
+         <label class="form-check-label" for="exampleCheck1">Slažem se sa uslovima korištenja.</label>
+         <input type="checkbox" name="uslov" class="cekbox">
+         <br>
+
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal" style="margin-bottom: -10px;">Zatvori</button>
+         <button type="submit" class="btn btn-primary">Završi registraciju</button>
+       </div>
+       </form>
+       </div>
+     </div>
+     </div>
+
+ <!--- jquery -->
+ <!-- log in-->
+     <script>
+             $(function() {
+                $("#Log_in").validate({
+                 rules: {
+                       LogInEmail: {
+                         required: true,
+                         email: true
+                       },
+                       logpass: {
+                         required: true,
+                         minlength: 5
+                       }
+                },
+             messages: {
+                      LogInEmail: {
+                        required: "Molimo vas unesite vaš email",
+                        email: "Vaš email nije ispravan."
+                      },
+                      logpass: {
+                        required: "Molimo vas unesite vašu šifru",
+                        minlength: "Vaša šifra nije ispravna."
+                      }
+                      },
+
+               submitHandler: function(form) {
+                 form.submit();
+             }
+          });
+   });
+   </script>
+
+   <!-- register -->
+   <script>
+     $(function() {
+        $("#Register1").validate({
+         rules: {
+               ime1: {
+                 required: true,
+                 minlength: 3
+               },
+               prezime1: {
+                 required: true,
+                 minlength: 5
+               },
+               regemail: {
+                 required: true,
+                 email: true
+               },
+               regpass: {
+                 required: true,
+                 minlength: 8
+               },
+               uslov: {
+                 required: true
+               }
+        },
+     messages: {
+              ime1: {
+                required: "Molimo vas unesite vaše ime",
+                email: "Vaš mora sadržati najmanje 3 slova."
+              },
+              prezime1: {
+                required: "Molimo vas unesite vaše prezime",
+                minlength: "Vaše prezime mora sadržati najmanje 5 slova."
+              },
+              regemail: {
+                required: "Vaš Email je obavezan za registraciju.",
+                email: "Vaš Email je neispravan"
+              },
+              regpass: {
+                required: "Molimo vas unesite šifru.",
+                minlength: "Vaša šifra mora sadržati minimalno 8 slova"
+              },
+              uslov: {
+                required: "Niste prihvatili uslove koristenja!"
+              }
+              },
+
+       submitHandler: function(form) {
+         form.submit();
+     }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.js"></script>
@@ -539,6 +720,11 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+
+
+
+
 
 </body>
 
