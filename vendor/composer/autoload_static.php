@@ -6,6 +6,11 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitf1ef2c38f1a771ce4ca57996454fd2f7
 {
+    public static $files = array (
+        'fc73bab8d04e21bcdda37ca319c63800' => __DIR__ . '/..' . '/mikecao/flight/flight/autoload.php',
+        '5b7d984aab5ae919d3362ad9588977eb' => __DIR__ . '/..' . '/mikecao/flight/flight/Flight.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
